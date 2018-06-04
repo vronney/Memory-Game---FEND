@@ -131,14 +131,14 @@ h1 {
     font-size: 30px;
 }
 
-#score-panel .stars {
+#score-panel .rateStars {
     margin: 0;
     padding: 0;
     display: inline-block;
     margin: 0 5px 0 0;
 }
 
-#score-panel .stars li {
+#score-panel .rateStars li {
     list-style: none;
     display: inline-block;
 }
