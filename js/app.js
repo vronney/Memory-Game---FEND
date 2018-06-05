@@ -75,7 +75,7 @@ function endGame(Clicks, score) {
         allowEscapeKey: false,
         allowOutsideClick: false,
         title: 'Congratulations! You Won!',
-        text: `With ${Clicks} Clicks and ${score} Stars in ${second} Seconds.\n Woooooo!`,
+        text: 'With ' + Clicks + ' Clicks and ' + score + ' Stars in ' + second + ' Seconds.\n Woooooo!',
         type: 'success',
         confirmButtonColor: '#02ccba',
         confirmButtonText: 'Play again!'
