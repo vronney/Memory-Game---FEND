@@ -1,6 +1,8 @@
 # Memory Game Project
 
 ## Outline of game......
+*A 4x4 board was create with images on the reverse side*
+*The player is to match the cards as soon as possible.*
 
 Used supplied HTML and CSS provided as starter code.  
 
