@@ -1,8 +1,11 @@
 # Memory Game Project
 
 ## Outline of game......
-*A 4x4 board was create with images on the reverse side*
+*A 4x4 board was created with images on the reverse side*
 *The player is to match the cards as soon as possible.*
+*A timer is initiated when the player clicks on a card.*
+*A shuffle method was used from StackoverFlow.*
+*   SHUFFLE FUNCTION - to randomise the various icons used in the game
 
 Used supplied HTML and CSS provided as starter code.  
 
