@@ -58,10 +58,8 @@ function setRating(moves) {
 	} else if (moves > rank2stars && moves < rank1stars) {
 		$ratingStars.eq(1).removeClass('fa-angellist').addClass('fa-thumbs-down');
 		rating = 1;
-	} else if (moves > rank1stars) {
-		$ratingStars.eq(0).removeClass('fa-angellist').addClass('fa-thumbs-down');
-		rating = 0;
-	}
+	} 
+	
 	return { score: rating };
 };
 
