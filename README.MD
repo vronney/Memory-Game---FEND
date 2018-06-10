@@ -9,7 +9,7 @@
 
 Used supplied HTML and CSS provided as starter code.  
 
-## To play.
+## To play
 
 click on link https://vronney.github.io/Memory-Game-FEND/
 
@@ -24,4 +24,10 @@ The purpose behind the game is the challenge one's memory and to see how fast th
 * Initiate the game with 3 fa-angellist icons to start the game.  As the player trys to clear the board the fa-angellist icons 
 are changed to the fa-thumbs-down icon.  
 * When the player finishes the game a message is displayed to congratulate the player or ask if they are sure they want to quit.  
+
+## Known Bugs
+
+1. Not able to get the timer to start when a card is clicked - instead the timer starts as soon as the page is loaded.
+2. Restart game is a little glitchy.
+
 
