@@ -9,6 +9,14 @@
 
 Used supplied HTML and CSS provided as starter code.  
 
+## To play.
+
+click on link https://vronney.github.io/Memory-Game-FEND/
+
+## The purpose of the game:
+
+To match the cards in the less amount of time.  
+
 ## The Game:
 
 The purpose behind the game is the challenge one's memory and to see how fast the board can be cleared.  
