@@ -46,7 +46,10 @@ function initGame() {
 	resetseconds(currentseconds);
 	second = 0;
 	$seconds.text(`${second}`)
+	
+	if ($moveNum == 1) {
 	initTime();
+	}
 };
 
 // Set Rating and final Score
