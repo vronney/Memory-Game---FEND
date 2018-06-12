@@ -49,7 +49,7 @@ function initGame() {
 	
 	if ($moveNum == 1) {
 	initTime();
-	}
+	};
 };
 
 // Set Rating and final Score
