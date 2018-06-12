@@ -76,6 +76,14 @@ h1 {
     .Playground {
         width: 390px;
     }
+    
+    .Playground .box.show {
+        font-size: 75px;
+    }
+    
+    .Playground .box.match {
+        font-size: 75px;
+    }
 }
 
 @media only screen and (max-width: 450px) {
@@ -118,7 +126,7 @@ h1 {
     transform: rotateY(0);
     cursor: default;
     background: rgb(54, 214, 21);
-    font-size: 33px;
+    font-size: 50px;
 }
 
 .Playground .box.notmatch {
