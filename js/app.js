@@ -50,8 +50,8 @@ function initGame() {
 	
 	//start the timer when the first card is clicked
 	timeClick = 0;
+	
 	};
-};
 
 // Set Rating and final Score
 function setRating(moves) {
