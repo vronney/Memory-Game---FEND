@@ -108,7 +108,7 @@ var addboxListener = function () {
 	$Playground.find('.box').bind('click', function () {
 		
     timeClick = timeClick+1;
-    
+    console.log(timeClick);
     if (timeClick == 1) {
       initTime();
     };
