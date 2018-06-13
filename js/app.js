@@ -32,6 +32,7 @@ function shuffle(array) {
 
 // Initial Game
 function initGame() {
+	opened = [];
 	var boxes = shuffle(symbols);
 	$Playground.empty();
 	match = 0;
@@ -47,6 +48,7 @@ function initGame() {
 	second = 0;
 	$seconds.text(`${second}`)
 	
+	//start the timer when the first card is clicked
 	if ($moveNum == 1) {
 	initTime();
 	};
