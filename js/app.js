@@ -49,8 +49,7 @@ function initGame() {
 	$seconds.text(`${second}`)
 	
 	//start the timer when the first card is clicked
-	if ($moveNum == 1) {
-	initTime();
+	timeClick = 0;
 	};
 };
 
@@ -109,6 +108,14 @@ var addboxListener = function () {
 
 	// box flip
 	$Playground.find('.box').bind('click', function () {
+		//Starts timer once a card is clicked
+		timeClick = timeClick+1;
+    		console.log(timeClick);
+
+    		if (timeClick == 1) {
+      		initTime();
+    		}
+		
 		var $this = $(this)
 
 		if ($this.hasClass('show') || $this.hasClass('match')) { return true; }
