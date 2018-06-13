@@ -46,7 +46,7 @@ function initGame() {
 
 	resetseconds(currentseconds);
 	second = 0;
-	$seconds.text(`${second}`)
+	$seconds.text(`${second}`);
 	
 	//start the timer when the first card is clicked
 	timeClick = 0;
@@ -110,11 +110,10 @@ var addboxListener = function () {
 	$Playground.find('.box').bind('click', function () {
 		//Starts timer once a card is clicked
 		timeClick = timeClick+1;
-    		console.log(timeClick);
-
+    		
     		if (timeClick == 1) {
       		initTime();
-    		}
+    		};
 		
 		var $this = $(this)
 
