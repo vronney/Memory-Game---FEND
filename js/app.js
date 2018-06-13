@@ -90,8 +90,8 @@ $PlayAgain.bind('click', function () {
 	swal({
 		allowEscapeKey: false,
 		allowOutsideClick: false,
-		title: 'You need to be a surrender',
-		text: "Are you sure Mr. Noop",
+		title: 'Wow, I can not believe you are giving up!',
+		text: "Are you sure you want to quit?",
 		type: 'warning',
 		showCancelButton: true,
 		confirmButtonColor: '#02ccba',
