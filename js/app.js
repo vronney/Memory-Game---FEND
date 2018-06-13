@@ -1,5 +1,5 @@
 let symbols = ['diamond', 'diamond', 'paper-plane-o', 'paper-plane-o', 'anchor', 'anchor', 'bolt', 'bolt', 'cube', 'cube', 'leaf', 'leaf', 'bicycle', 'bicycle', 'bomb', 'bomb'],
-  	opened = [],
+ 	opened = [],
 	match = 0,
 	Clicks = 0,
 	$Playground = $('.Playground'),
@@ -10,7 +10,7 @@ let symbols = ['diamond', 'diamond', 'paper-plane-o', 'paper-plane-o', 'anchor',
 	delay = 400,
 	currentseconds,
 	second = 0,
-	$seconds = $('.seconds'),
+	$seconds = $('.timer'),
 	totalbox = symbols.length / 2,
 	rank3stars = 10,
 	rank2stars = 15,
@@ -32,7 +32,7 @@ function shuffle(array) {
 
 // Initial Game
 function initGame() {
-	opened = [];
+  opened = [];
 	var boxes = shuffle(symbols);
 	$Playground.empty();
 	match = 0;
@@ -44,14 +44,13 @@ function initGame() {
 	}
 	addboxListener();
 
-	resetseconds(currentseconds);
+  resetseconds(currentseconds);
 	second = 0;
 	$seconds.text(`${second}`);
-	
-	//start the timer when the first card is clicked
-	timeClick = 0;
-	
-	};
+
+  timeClick = 0;
+
+};
 
 // Set Rating and final Score
 function setRating(moves) {
@@ -63,7 +62,6 @@ function setRating(moves) {
 		$ratingStars.eq(1).removeClass('fa-angellist').addClass('fa-thumbs-down');
 		rating = 1;
 	} 
-	
 	return { score: rating };
 };
 
@@ -91,12 +89,12 @@ $PlayAgain.bind('click', function () {
 		allowEscapeKey: false,
 		allowOutsideClick: false,
 		title: 'Wow, I can not believe you are giving up!',
-		text: "Are you sure you want to quit?",
+		text: "Are you sure you don't want to keep playing?",
 		type: 'warning',
 		showCancelButton: true,
 		confirmButtonColor: '#02ccba',
 		cancelButtonColor: '#f95c3c',
-		confirmButtonText: 'Yes, Im noop',
+		confirmButtonText: 'Yes, Im giving up.',
 	}).then(function (isConfirm) {
 		if (isConfirm) {
 			initGame();
@@ -108,15 +106,13 @@ var addboxListener = function () {
 
 	// box flip
 	$Playground.find('.box').bind('click', function () {
-		//Starts timer once a card is clicked
-		timeClick = timeClick+1;
-    		
-    		if (timeClick == 1) {
-      		initTime();
-    		};
 		
-		var $this = $(this)
-
+    timeClick = timeClick+1;
+    
+    if (timeClick == 1) {
+      initTime();
+    };
+    var $this = $(this)
 		if ($this.hasClass('show') || $this.hasClass('match')) { return true; }
 
 		var box = $this.context.innerHTML;
@@ -157,12 +153,11 @@ var addboxListener = function () {
 	});
 };
 
-
 function initTime() {
 	currentseconds = setInterval(function () {
-		$seconds.text(`${second}`)
-		second = second + 1
-	}, 1000);
+		$seconds.text(`${second}`);
+		second = second + 1;
+	    },1000);
 }
 
 function resetseconds(seconds) {
@@ -170,5 +165,6 @@ function resetseconds(seconds) {
 		clearInterval(seconds);
 	}
 }
+
 
 initGame();
